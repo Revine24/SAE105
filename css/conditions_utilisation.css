@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd;
+    color: #333;
+    line-height: 1.6; /* Pour améliorer la lisibilité du texte */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6a5acd;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    height: 150px;
+    margin-right: 10px;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: background-color 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+main {
+    padding: 40px 20px; /* Plus de padding pour espacer le contenu */
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto; /* Centre le contenu */
+}
+
+main h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+main ol {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+main ol li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+footer {
+    background-color: #6a5acd;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
