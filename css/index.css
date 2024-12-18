@@ -99,6 +99,7 @@ footer {
     margin-top: 30px;
     position: absolute;
     bottom: 0;
+    widh: 100%;
 }
 
 footer a {
