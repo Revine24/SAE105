@@ -1,11 +1,21 @@
-body {
-    font-family: Arial, sans-serif;
+/* Assure que la page occupe toute la hauteur */
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
     background-color: #f8f9fa; /* Couleur de fond claire */
     color: #333; /* Texte en couleur sombre */
 }
 
+/* Conteneur principal qui englobe header, main et garde le footer en bas */
+.wrapper {
+    min-height: 100%; /* Étend la hauteur au minimum à 100% */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -54,7 +64,9 @@ header nav a:hover {
     color: white;
 }
 
+/* Contenu principal */
 main {
+    flex: 1; /* Le contenu principal occupe l'espace restant */
     text-align: center;
     padding: 30px;
 }
@@ -68,7 +80,6 @@ main {
     margin-bottom: -30px !important; /* Espacement sous le titre */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3) !important; /* Ombre légère */
 }
-
 
 .destinations {
     display: flex;
@@ -91,6 +102,7 @@ main {
     transform: scale(1.05); /* Zoom au survol */
 }
 
+/* Footer */
 footer {
     background-color: #ffd700; /* Même couleur que le header */
     color: #333;
